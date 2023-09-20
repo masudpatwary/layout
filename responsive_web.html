@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiv Web</title>
+</head>
+<style>
+    .responsiv_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 50px;
+        column-gap: 50px;
+    }
+
+    .food {
+        width: auto;
+        border: 2px solid black;
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+
+    .food img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 3em;
+        font-weight: 900;
+    }
+
+    @keyframes sliding {
+        0% {
+            color: green;
+            left: 5px;
+        }
+
+        25% {
+            color: rgb(0, 131, 81)
+        }
+
+        50% {
+            color: rgb(25, 0, 255);
+        }
+
+        75% {
+            color: blueviolet;
+        }
+
+        100% {
+            color: rgb(255, 0, 0);
+            left: -5px;
+
+        }
+    }
+
+    h3 {
+        position: relative;
+        font-size: 30px;
+        color: rgb(1, 107, 36);
+        animation: sliding 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes coloring {
+        0% {
+            background-color: rgb(0, 83, 35);
+            color: white;
+        }
+
+        50% {
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        100% {
+            background-color: blue;
+            color: red;
+        }
+    }
+
+    button {
+        font-size: 25px;
+        padding: 07px 20px;
+        width: 150px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(119, 0, 255);
+        animation: coloring 3s ease-in-out infinite alternate;
+    }
+
+    button:hover {
+        background-color: green;
+        color: white;
+        transition: 0.3s;
+        font-weight: 900px;
+        animation: none;
+    }
+
+    .description {
+        font-size: 18px;
+        text-align: justify;
+    }
+</style>
+
+<body>
+    <div class="responsiv_container">
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-1</h1>
+            <h3>Price-100Tk</h3>
+            <button>Order</button>
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio cupiditate ab
+                perferendis sapiente tenetur laborum, accusamus voluptatem, asperiores, maxime alias cum mollitia ipsam?
+                Temporibus, porro officiis? Quod a veritatis tenetur.</p>
+        </div>
+        <div class="food">
+            <img src="images/licensed-image.jpeg" alt="">
+            <h1 class="name">Food item-2</h1>
+            <h3>Price-200Tk</h3>
+            <button>Order</button>
+            <p class="description">Voluptatem iste dolore nesciunt maxime ullam provident debitis, pariatur, quos
+                quaerat sapiente nostrum? Unde iusto eius in magnam ut earum impedit saepe, nulla ex sit perspiciatis,
+                quo molestias deserunt. Nemo.</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-3</h1>
+            <h3>Price-300Tk</h3>
+            <button>Order</button>
+            <p class="description">Soluta corporis repudiandae delectus impedit sequi nostrum expedita non aspernatur,
+                veniam ipsam, alias quisquam illo provident veritatis culpa perspiciatis. Quos molestias dignissimos
+                incidunt recusandae ut dolorem omnis, quidem numquam odio.</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-4</h1>
+            <h3>Price-400Tk</h3>
+            <button>Order</button>
+            <p class="description">Eveniet, ex impedit optio, voluptate eaque asperiores harum a in earum libero
+                aspernatur labore ad sunt repudiandae porro eum iusto neque autem odio tempore, sequi laboriosam
+                expedita repellat tempora. Illo?</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-5</h1>
+            <h3>Price-500Tk</h3>
+            <button>Order</button>
+            <p class="description">Voluptates excepturi explicabo ipsum iste dolor, iure quae molestiae adipisci
+                obcaecati recusandae ullam corporis soluta quos maxime quod, porro suscipit distinctio odio nam totam
+                consectetur voluptas. Sunt quidem dicta maiores?</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-6</h1>
+            <h3>Price-600Tk</h3>
+            <button>Order</button>
+            <p class="description">Quae molestiae, ex vero eum obcaecati explicabo tenetur iure dolor dolorem distinctio
+                error excepturi a sunt accusantium possimus nemo quia reiciendis. Veritatis quisquam rem error sunt
+                distinctio, vitae neque fuga?</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-7</h1>
+            <h3>Price-700Tk</h3>
+            <button>Order</button>
+            <p class="description">Laudantium quibusdam blanditiis dolor ad! Earum fuga id, et quisquam quam voluptatum
+                reprehenderit unde repellendus eos ipsam libero nam beatae ratione quaerat eum soluta recusandae at
+                nihil reiciendis ea molestias.</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-8</h1>
+            <h3>Price-800Tk</h3>
+            <button>Order</button>
+            <p class="description">Suscipit, saepe. Praesentium, autem cupiditate. Magni, officia consequuntur ad, eos
+                totam praesentium eius similique iure dolorum asperiores perspiciatis numquam! Soluta nihil maxime vitae
+                fugiat culpa error dolore provident numquam hic.</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-9</h1>
+            <h3>Price-900Tk</h3>
+            <button>Order</button>
+            <p class="description">Reprehenderit, facilis blanditiis dolore ut suscipit fugiat veniam pariatur nam fuga
+                hic. Qui aspernatur repellendus hic, ad est non laudantium amet optio earum corrupti accusamus nemo
+                architecto! Aspernatur, labore a!</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-10</h1>
+            <h3>Price-1000Tk</h3>
+            <button>Order</button>
+            <p class="description">Odio sequi repellendus a, atque enim eveniet accusantium, soluta ratione neque
+                voluptatibus iste voluptatem fugit consequatur ex labore nostrum repellat earum iusto laborum id
+                corrupti? Quos inventore quasi recusandae ducimus.</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-11</h1>
+            <h3>Price-1100Tk</h3>
+            <button>Order</button>
+            <p class="description">Laboriosam libero modi quae, distinctio commodi, ducimus, debitis et consequatur
+                recusandae voluptatum non quasi! Nesciunt libero doloribus iste magni maxime provident ut numquam
+                assumenda, animi consequatur? Blanditiis eos voluptatum aliquid!</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-12</h1>
+            <h3>Price-1200Tk</h3>
+            <button>Order</button>
+            <p class="description">Illum repellat vel earum at libero, itaque nesciunt numquam molestiae. Sunt tempora
+                praesentium tenetur adipisci atque rem veniam magni, quasi dicta asperiores dignissimos vero facilis
+                reiciendis, harum mollitia, magnam voluptates.</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-13</h1>
+            <h3>Price-1300Tk</h3>
+            <button>Order</button>
+            <p class="description">Asperiores doloribus corporis nam quidem laboriosam repudiandae magnam ad distinctio
+                est libero minima voluptates in, doloremque odio dolorem eos molestias porro exercitationem obcaecati
+                soluta. Ex consectetur distinctio ad asperiores laborum?</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-14</h1>
+            <h3>Price-1400Tk</h3>
+            <button>Order</button>
+            <p class="description">Debitis aliquid, ullam animi suscipit commodi facere voluptatem accusamus maxime
+                voluptate illo harum, voluptates eos alias ducimus sapiente soluta! Commodi, velit? Vitae corrupti
+                deleniti laboriosam eum fuga numquam harum quae!</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-15</h1>
+            <h3>Price-1500Tk</h3>
+            <button>Order</button>
+            <p class="description">Voluptatibus esse nostrum nam praesentium nobis fuga aut nihil doloribus beatae.
+                Nobis obcaecati omnis voluptatem nihil! Explicabo officiis totam odit fugiat. Quae in inventore sapiente
+                recusandae perspiciatis eligendi, mollitia atque.</p>
+        </div>
+        <div class="food">
+            <img src="images/vegetables-1584999_1920.jpg" alt="">
+            <h1 class="name">Food item-16</h1>
+            <h3>Price-1600Tk</h3>
+            <button>Order</button>
+            <p class="description">Molestiae unde aliquid ipsum suscipit sequi enim. Laudantium voluptatum soluta dicta,
+                molestias aliquam, hic reiciendis voluptate ut quis saepe harum. Neque molestiae ad numquam quis! Labore
+                quidem molestiae facilis eligendi!</p>
+        </div>
+    </div>
+</body>
+
+</html>
